@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "FieldDesk — Engineer Call Log",
+  "short_name": "FieldDesk",
+  "description": "Field engineer call and site visit log for Ibrahim Osman.",
+  "lang": "en-GB",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f7fa",
+  "theme_color": "#f5f7fa",
+  "icons": [
+    { "src": "fielddesk-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
+
