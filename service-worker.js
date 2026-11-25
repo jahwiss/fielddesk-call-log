@@ -1,4 +1,4 @@
-const CACHE='fielddesk-shell-v5';
+const CACHE='fielddesk-shell-v6';
 const APP_FILES=['./','./index.html','./manifest.webmanifest','./fielddesk-icon.svg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_FILES)));
