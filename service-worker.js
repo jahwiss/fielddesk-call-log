@@ -1,4 +1,4 @@
-const CACHE='fielddesk-shell-v2';
+const CACHE='fielddesk-shell-v3';
 const APP_FILES=['./','./field-engineer-call-log.html','./manifest.webmanifest','./fielddesk-icon.svg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(APP_FILES)));
@@ -14,6 +14,6 @@ self.addEventListener('fetch',event=>{
     const copy=response.clone();
     caches.open(CACHE).then(cache=>cache.put(event.request,copy));
     return response;
-  }).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./field-engineer-call-log.html'))));
+  }).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('./index.html'))));
 });
 
